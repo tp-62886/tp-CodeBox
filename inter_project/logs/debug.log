@@ -1,0 +1,251 @@
+INFO 2025-07-20 02:40:03,245 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 02:43:10,409 autoreload D:\code\inter_project\inter_project\settings.py changed, reloading.
+INFO 2025-07-20 02:43:11,230 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 02:45:28,058 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 02:50:27,862 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 02:51:55,450 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 02:54:54,234 autoreload D:\code\inter_project\inter_project\settings.py changed, reloading.
+INFO 2025-07-20 02:54:56,818 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 02:57:05,066 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 02:58:07,016 autoreload D:\code\inter_project\api\JobRecServer_api.py changed, reloading.
+INFO 2025-07-20 02:58:08,003 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 02:59:07,703 autoreload D:\code\inter_project\api\JobRecServer_api.py changed, reloading.
+INFO 2025-07-20 02:59:08,668 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 02:59:56,448 autoreload D:\code\inter_project\api\JobRecServer_api.py changed, reloading.
+INFO 2025-07-20 02:59:57,401 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:02:32,351 autoreload D:\code\inter_project\api\JobRecServer_api.py changed, reloading.
+INFO 2025-07-20 03:02:33,457 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:04:07,030 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:10:34,887 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:11:13,176 autoreload D:\code\inter_project\JobRecServer\apps\middle\models.py changed, reloading.
+INFO 2025-07-20 03:11:14,145 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:11:58,850 autoreload D:\code\inter_project\JobRecServer\apps\middle\models.py changed, reloading.
+INFO 2025-07-20 03:11:59,818 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:12:52,435 autoreload D:\code\inter_project\JobRecServer\apps\urls.py changed, reloading.
+INFO 2025-07-20 03:12:53,637 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:13:08,363 autoreload D:\code\inter_project\JobRecServer\apps\urls.py changed, reloading.
+INFO 2025-07-20 03:13:11,906 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:16:38,634 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:20:50,702 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:21:12,048 autoreload D:\code\inter_project\JobRecServer\apps\user\urls.py changed, reloading.
+INFO 2025-07-20 03:21:17,651 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:21:54,777 autoreload D:\code\inter_project\JobRecServer\apps\user\views.py changed, reloading.
+INFO 2025-07-20 03:21:55,816 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:23:07,665 autoreload D:\code\inter_project\JobRecServer\apps\student\serializers.py changed, reloading.
+INFO 2025-07-20 03:23:09,333 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:23:52,882 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:25:50,834 autoreload D:\code\inter_project\inter_project\settings.py changed, reloading.
+INFO 2025-07-20 03:25:52,056 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:26:51,859 autoreload D:\code\inter_project\inter_project\settings.py changed, reloading.
+INFO 2025-07-20 03:26:52,993 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:27:08,587 autoreload D:\code\inter_project\inter_project\settings.py changed, reloading.
+INFO 2025-07-20 03:27:09,947 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:35:04,499 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:35:50,511 autoreload D:\code\inter_project\JobRecServer\apps\resume\models.py changed, reloading.
+INFO 2025-07-20 03:35:53,258 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:36:53,487 autoreload D:\code\inter_project\JobRecServer\apps\work\urls.py changed, reloading.
+INFO 2025-07-20 03:36:55,188 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:37:28,324 autoreload D:\code\inter_project\JobRecServer\apps\recruit\urls.py changed, reloading.
+INFO 2025-07-20 03:37:29,961 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:37:38,337 autoreload D:\code\inter_project\JobRecServer\apps\recruit\models.py changed, reloading.
+INFO 2025-07-20 03:37:40,014 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:41:45,054 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:48:07,527 autoreload D:\code\inter_project\JobRecServer\apps\user\models.py changed, reloading.
+INFO 2025-07-20 03:48:08,990 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:48:48,271 autoreload D:\code\inter_project\JobRecServer\apps\user\models.py changed, reloading.
+INFO 2025-07-20 03:48:49,317 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:50:51,856 autoreload D:\code\inter_project\JobRecServer\apps\user\models.py changed, reloading.
+INFO 2025-07-20 03:50:52,923 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:52:03,454 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:58:43,963 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 03:59:03,004 autoreload Watching for file changes with StatReloader
+WARNING 2025-07-20 04:00:33,585 log Not Found: /api/job/myJob/
+WARNING 2025-07-20 04:00:33,585 basehttp "OPTIONS /api/job/myJob/ HTTP/1.1" 404 2363
+WARNING 2025-07-20 04:00:47,063 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 04:00:47,063 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+INFO 2025-07-20 04:03:55,537 autoreload D:\code\inter_project\JobRecServer\apps\user\models.py changed, reloading.
+INFO 2025-07-20 04:03:56,934 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 04:05:20,208 autoreload D:\code\inter_project\api\JobRecServer_api.py changed, reloading.
+INFO 2025-07-20 04:05:21,599 autoreload Watching for file changes with StatReloader
+WARNING 2025-07-20 10:11:11,923 log Not Found: /api/user/login/
+WARNING 2025-07-20 10:11:11,923 basehttp "OPTIONS /api/user/login/ HTTP/1.1" 404 2366
+WARNING 2025-07-20 10:11:11,939 log Not Found: /api/user/login/
+WARNING 2025-07-20 10:11:11,939 basehttp "OPTIONS /api/user/login/ HTTP/1.1" 404 2366
+WARNING 2025-07-20 10:11:11,939 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:11:11,954 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:34:21,213 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:34:31,463 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:34:49,644 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:34:49,644 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+INFO 2025-07-20 10:35:12,237 autoreload Watching for file changes with StatReloader
+INFO 2025-07-20 10:35:49,032 autoreload Watching for file changes with StatReloader
+WARNING 2025-07-20 10:47:05,076 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:47:05,076 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:47:14,574 log Not Found: /api/user/login/
+WARNING 2025-07-20 10:47:14,574 basehttp "OPTIONS /api/user/login/ HTTP/1.1" 404 2366
+WARNING 2025-07-20 10:47:22,095 log Not Found: /api/user/login/
+WARNING 2025-07-20 10:47:22,095 basehttp "OPTIONS /api/user/login/ HTTP/1.1" 404 2366
+WARNING 2025-07-20 10:47:32,824 log Not Found: /api/user/login/
+WARNING 2025-07-20 10:47:32,824 basehttp "OPTIONS /api/user/login/ HTTP/1.1" 404 2366
+WARNING 2025-07-20 10:47:43,261 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:47:43,261 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:47:55,464 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:47:55,469 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:47:56,473 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:47:56,477 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:47:57,145 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:47:57,145 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:47:57,733 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:47:57,737 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:47:58,275 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:47:58,275 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:47:58,655 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:47:58,655 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:47:59,124 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:47:59,126 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:47:59,570 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:47:59,570 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:47:59,964 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:47:59,966 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:48:00,498 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:48:00,502 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:49:07,681 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:07,684 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:09,670 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:09,670 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:10,345 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:10,345 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:10,692 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:10,696 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:10,846 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:10,846 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:10,981 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:10,981 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:11,115 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:11,119 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:11,537 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:11,537 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:11,716 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:11,716 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:11,814 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:11,814 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:11,970 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:11,970 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:12,093 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:12,094 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:12,219 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:12,219 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:12,386 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:12,386 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:39,812 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:39,816 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:40,640 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:40,640 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:41,417 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:41,417 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:42,334 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:42,334 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:43,179 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:43,179 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:49:44,197 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:49:44,199 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:50:04,762 log Not Found: /api//JobReServer/job/clickJob/
+WARNING 2025-07-20 10:50:49,552 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 10:50:51,851 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 10:50:53,546 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 10:50:54,517 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 10:50:55,839 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 10:50:56,572 basehttp "OPTIONS /api//JobReServer/job/clickJob/ HTTP/1.1" 404 2411
+WARNING 2025-07-20 10:50:56,577 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 10:50:56,582 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 10:50:56,585 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 10:50:56,586 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 10:50:56,586 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 10:50:56,632 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 10:50:56,632 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 10:50:57,451 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 10:50:57,451 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 10:51:13,679 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:51:13,681 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:51:16,860 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:51:16,860 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:51:17,556 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:51:17,556 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:51:18,115 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:51:18,115 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:51:18,653 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:51:18,653 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:51:19,166 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:51:19,166 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:51:19,948 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:51:19,953 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:51:20,650 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:51:20,653 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:51:21,590 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:51:21,590 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:51:22,384 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:51:22,384 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:51:23,285 log Not Found: /api/job/clickJob/
+WARNING 2025-07-20 10:51:23,285 basehttp "OPTIONS /api/job/clickJob/ HTTP/1.1" 404 2372
+WARNING 2025-07-20 10:51:26,635 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 10:51:26,638 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:09:45,617 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:09:45,618 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:10:42,395 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:10:42,396 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:09,737 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:11,795 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:12,068 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:12,350 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:12,697 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:12,875 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:49,706 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,707 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,707 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,708 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,708 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,709 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,727 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:49,854 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,857 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:49,858 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:49,859 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:49,860 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:49,860 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:49,865 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,866 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,866 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,866 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,867 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:49,868 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,870 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,887 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:49,888 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:49,889 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:49,889 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:49,890 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:49,891 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:49,892 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,892 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,892 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,893 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,894 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,895 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:30:49,904 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:30:49,905 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:31:17,119 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:31:17,120 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:31:17,800 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:31:17,801 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:31:18,725 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:31:18,726 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:31:21,054 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:31:21,055 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:31:27,139 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:31:27,140 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:31:27,910 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:31:27,910 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:31:28,506 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:31:28,507 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
+WARNING 2025-07-20 11:31:29,293 log Not Found: /api/JobReServer/job/clickJob/
+WARNING 2025-07-20 11:31:29,294 basehttp "OPTIONS /api/JobReServer/job/clickJob/ HTTP/1.1" 404 2408
