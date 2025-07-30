@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API测试</title>
+</head>
+<body>
+    <h1>API测试页面</h1>
+    <div id="result"></div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM加载完成，开始测试API...');
+
+            fetch('/Graphapps/statistics/')
+            .then(response => {
+                console.log('Response status:', response.status);
+                return response.json();
+            })
+            .then(data => {
+                console.log('API响应数据:', data);
+                document.getElementById('result').innerHTML =
+                    `<p>实体数量: ${data.entity_count}</p>
+                     <p>关系数量: ${data.relation_count}</p>
+                     <p>成功: ${data.success}</p>
+                     <p>实体类型: ${JSON.stringify(data.entity_types)}</p>
+                     <p>关系类型: ${JSON.stringify(data.relation_types)}</p>`;
+            })
+            .catch(error => {
+                console.error('API调用失败:', error);
+                document.getElementById('result').innerHTML = `<p>错误: ${error}</p>`;
+            });
+        });
+    </script>
+</body>
+</html>

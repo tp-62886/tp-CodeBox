@@ -1,0 +1,7 @@
+{
+  "code": -1002,
+  "result": null,
+  "message": "非法跨域请求",
+  "traceId": "",
+  "sampled": false
+}

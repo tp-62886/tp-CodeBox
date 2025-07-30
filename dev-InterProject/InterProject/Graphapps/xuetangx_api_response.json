@@ -1,0 +1,27 @@
+{
+  "data": {
+    "courseList": [
+      {
+        "id": "CS001",
+        "name": "Python编程基础",
+        "teacherName": "张教授",
+        "description": "本课程介绍Python编程的基础知识，包括数据类型、控制结构、函数和模块等内容。",
+        "category": "计算机科学"
+      },
+      {
+        "id": "CS002",
+        "name": "数据结构与算法",
+        "teacherName": "李教授",
+        "description": "本课程介绍基本数据结构和算法，包括数组、链表、队列、栈、树、图以及常见排序和搜索算法。",
+        "category": "计算机科学"
+      },
+      {
+        "id": "CS003",
+        "name": "机器学习入门",
+        "teacherName": "王教授",
+        "description": "本课程介绍机器学习基本概念和常用算法，包括监督学习、无监督学习和强化学习。",
+        "category": "人工智能"
+      }
+    ]
+  }
+}

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>知识图谱管理面板</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .card {
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .collection-card {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .progress {
+            height: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        .action-buttons {
+            margin-top: 20px;
+        }
+        .alert {
+            display: none;
+            margin-top: 20px;
+        }
+        .status-badge {
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .status-running {
+            background-color: #28a745;
+            color: white;
+        }
+        .status-completed {
+            background-color: #007bff;
+            color: white;
+        }
+        .status-idle {
+            background-color: #6c757d;
+            color: white;
+        }
+        .status-error {
+            background-color: #dc3545;
+            color: white;
+        }
+        .processed-topics {
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">计算机专业知识图谱</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">知识图谱</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/admin">管理面板</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h4>知识图谱采集管理</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="collection-card">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5>当前采集进度</h5>
+                                <span id="refresh-indicator" class="badge bg-secondary">自动刷新: 启用</span>
+                            </div>
+
+                            <!-- 状态标识 -->
+                            <div id="status-badge" class="status-badge status-idle">空闲</div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p><strong>已完成批次:</strong> <span id="last-batch">{{ progress.last_batch }}</span> / <span id="total-batches">{{ progress.total_batches }}</span></p>
+                                    <p><strong>上次更新时间:</strong> <span id="last-updated">{{ progress.last_updated }}</span></p>
+                                    <p><strong>已处理主题数:</strong> <span id="topic-count">{{ progress.processed_topics|length if progress.processed_topics else 0 }}</span></p>
+
+                                    <div class="mt-3">
+                                        <p><strong>已处理主题:</strong></p>
+                                        <div class="processed-topics" id="topic-list">
+                                            {% if progress.processed_topics %}
+                                                <ul>
+                                                {% for topic in progress.processed_topics %}
+                                                    <li>{{ topic }}</li>
+                                                {% endfor %}
+                                                </ul>
+                                            {% else %}
+                                                <p class="text-muted">暂无处理记录</p>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><strong>采集进度:</strong></p>
+                                    <div class="progress">
+                                        {% set progress_value = (progress.last_batch / progress.total_batches * 100)|round(1) if progress.total_batches > 0 else 0 %}
+                                        <div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar"
+                                            style="width: 0%;"
+                                            data-progress-value="{{ progress_value }}">
+                                        </div>
+                                    </div>
+                                    <p class="text-end mt-1"><span id="progress-value">{{ progress_value }}</span>%</p>
+
+                                    <div class="form-check form-switch mt-4">
+                                        <input class="form-check-input" type="checkbox" id="auto-refresh" checked>
+                                        <label class="form-check-label" for="auto-refresh">自动刷新进度 (每10秒)</label>
+                                    </div>
+                                    <button id="refresh-now" class="btn btn-sm btn-outline-secondary mt-2">立即刷新</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="action-buttons">
+                            <h5>采集操作</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">继续采集</h6>
+                                            <p class="card-text">从上次停止的地方继续采集知识点，自动创建新批次。</p>
+                                            <button id="continue-collection" class="btn btn-primary">继续采集</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">重新采集</h6>
+                                            <p class="card-text">重置所有进度，从头开始采集知识点。</p>
+                                            <button id="reset-collection" class="btn btn-danger">重新采集</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-success" id="success-alert" role="alert"></div>
+                        <div class="alert alert-danger" id="error-alert" role="alert"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // 检测运行环境并设置API基础URL
+        const isFileProtocol = window.location.protocol === 'file:';
+        const API_BASE_URL = isFileProtocol ? 'http://127.0.0.1:8000' : '';
+
+        if (isFileProtocol) {
+            console.log('检测到文件协议，使用本地API服务器: ' + API_BASE_URL);
+            // 显示提示信息
+            const alertDiv = document.createElement('div');
+            alertDiv.className = 'alert alert-info alert-dismissible fade show';
+            alertDiv.innerHTML = `
+                <strong>提示:</strong> 检测到您直接打开了HTML文件。请确保Django后端服务器正在运行 (http://127.0.0.1:8000)
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
+            document.body.insertBefore(alertDiv, document.body.firstChild);
+        }
+
+        // 全局变量
+        let autoRefreshEnabled = true;
+        let refreshInterval;
+        let lastProgressData = {};
+
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 启动自动刷新
+            startAutoRefresh();
+
+            // 设置自动刷新开关
+            document.getElementById('auto-refresh').addEventListener('change', function() {
+                autoRefreshEnabled = this.checked;
+                document.getElementById('refresh-indicator').textContent =
+                    '自动刷新: ' + (autoRefreshEnabled ? '启用' : '禁用');
+
+                if (autoRefreshEnabled) {
+                    startAutoRefresh();
+                } else {
+                    stopAutoRefresh();
+                }
+            });
+
+            // 立即刷新按钮
+            document.getElementById('refresh-now').addEventListener('click', function() {
+                fetchProgressInfo();
+            });
+
+            // 初始化状态显示
+            updateStatusBadge('{{ progress.status if progress.status else "idle" }}');
+
+            // 设置初始进度条值
+            const progressBar = document.getElementById('progress-bar');
+            if (progressBar) {
+                const progressValue = progressBar.getAttribute('data-progress-value');
+                if (progressValue) {
+                    progressBar.style.width = progressValue + '%';
+                }
+            }
+        });
+
+        // 启动自动刷新
+        function startAutoRefresh() {
+            stopAutoRefresh(); // 防止多个计时器同时运行
+            refreshInterval = setInterval(fetchProgressInfo, 10000); // 每10秒刷新一次
+        }
+
+        // 停止自动刷新
+        function stopAutoRefresh() {
+            if (refreshInterval) {
+                clearInterval(refreshInterval);
+            }
+        }
+
+        // 获取最新进度信息
+        function fetchProgressInfo() {
+            fetch(API_BASE_URL + '/Graphapps/get_collection_progress/')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        updateProgressUI(data.progress);
+                        lastProgressData = data.progress;
+                    }
+                })
+                .catch(error => {
+                    console.error('获取进度信息失败:', error);
+                });
+        }
+
+        // 更新UI中的进度信息
+        function updateProgressUI(progress) {
+            // 更新批次信息
+            document.getElementById('last-batch').textContent = progress.last_batch || 0;
+            document.getElementById('total-batches').textContent = progress.total_batches || 0;
+            document.getElementById('last-updated').textContent = progress.last_updated || '未知';
+
+            // 更新进度条
+            const progressValue = progress.total_batches > 0
+                ? ((progress.last_batch / progress.total_batches) * 100).toFixed(1)
+                : 0;
+
+            // 更新进度条和百分比显示
+            const progressBar = document.getElementById('progress-bar');
+            if (progressBar) {
+                progressBar.style.width = progressValue + '%';
+                progressBar.setAttribute('data-progress-value', progressValue);
+            }
+
+            const progressValueElement = document.getElementById('progress-value');
+            if (progressValueElement) {
+                progressValueElement.textContent = progressValue;
+            }
+
+            // 更新状态标识
+            updateStatusBadge(progress.status || 'idle');
+
+            // 更新主题列表
+            if (progress.processed_topics && progress.processed_topics.length > 0) {
+                document.getElementById('topic-count').textContent = progress.processed_topics.length;
+
+                const topicListContainer = document.getElementById('topic-list');
+                topicListContainer.innerHTML = '<ul>';
+                progress.processed_topics.forEach(topic => {
+                    topicListContainer.innerHTML += `<li>${topic}</li>`;
+                });
+                topicListContainer.innerHTML += '</ul>';
+            }
+        }
+
+        // 更新状态显示
+        function updateStatusBadge(status) {
+            const badge = document.getElementById('status-badge');
+            badge.className = 'status-badge';
+
+            switch(status) {
+                case 'running':
+                    badge.classList.add('status-running');
+                    badge.textContent = '采集中';
+
+                    // 禁用按钮，防止重复启动
+                    document.getElementById('continue-collection').disabled = true;
+                    document.getElementById('reset-collection').disabled = true;
+                    break;
+
+                case 'completed':
+                    badge.classList.add('status-completed');
+                    badge.textContent = '已完成';
+
+                    // 启用按钮
+                    document.getElementById('continue-collection').disabled = false;
+                    document.getElementById('reset-collection').disabled = false;
+                    break;
+
+                case 'error':
+                    badge.classList.add('status-error');
+                    badge.textContent = '出错';
+
+                    // 启用按钮
+                    document.getElementById('continue-collection').disabled = false;
+                    document.getElementById('reset-collection').disabled = false;
+                    break;
+
+                default:
+                    badge.classList.add('status-idle');
+                    badge.textContent = '空闲';
+
+                    // 启用按钮
+                    document.getElementById('continue-collection').disabled = false;
+                    document.getElementById('reset-collection').disabled = false;
+                    break;
+            }
+        }
+
+        // 继续采集
+        document.getElementById('continue-collection').addEventListener('click', function() {
+            runCollection('continue');
+        });
+
+        // 重新采集
+        document.getElementById('reset-collection').addEventListener('click', function() {
+            if (confirm('确定要重置所有进度并重新开始采集吗？这将删除当前的采集进度。')) {
+                runCollection('reset');
+            }
+        });
+
+        function runCollection(type) {
+            // 显示加载中
+            document.getElementById('continue-collection').disabled = true;
+            document.getElementById('reset-collection').disabled = true;
+
+            // 发送请求
+            var formData = new FormData();
+            formData.append('collection_type', type);
+
+            fetch(API_BASE_URL + '/Graphapps/run_collection/', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showAlert('success-alert', data.message);
+
+                    // 立即刷新以获取最新状态
+                    setTimeout(fetchProgressInfo, 1000);
+
+                    // 更新状态为运行中
+                    updateStatusBadge('running');
+                } else {
+                    showAlert('error-alert', '错误: ' + data.error);
+                    document.getElementById('continue-collection').disabled = false;
+                    document.getElementById('reset-collection').disabled = false;
+                }
+            })
+            .catch(error => {
+                showAlert('error-alert', '请求错误: ' + error);
+                document.getElementById('continue-collection').disabled = false;
+                document.getElementById('reset-collection').disabled = false;
+            });
+        }
+
+        function showAlert(id, message) {
+            var alert = document.getElementById(id);
+            alert.textContent = message;
+            alert.style.display = 'block';
+
+            // 5秒后隐藏
+            setTimeout(function() {
+                alert.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>

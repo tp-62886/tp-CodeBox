@@ -1,0 +1,11 @@
+{
+  "task_id": "e8f093a4-4ca7-4bfc-a9ce-d37be099303d",
+  "collection_type": "baidu",
+  "max_items": 50,
+  "timeout": 300,
+  "retry_count": 3,
+  "topics": [],
+  "status": "started",
+  "start_time": "2025-07-26T13:25:38.209633",
+  "progress": 0
+}
